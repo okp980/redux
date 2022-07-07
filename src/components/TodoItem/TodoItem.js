@@ -5,18 +5,13 @@ import {
 	Card,
 	Col,
 	Container,
-	Image,
 	Row,
 } from "react-bootstrap";
 import { BsPencilFill, BsCheckLg } from "react-icons/bs";
 import { MdNotificationsActive } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleState } from "../../store/features/showForm/ShowFormSlice";
-import {
-	getTodo,
-	removeTodo,
-	resetSingleTodo,
-} from "../../store/features/todo/todoSlice";
+import { getTodo, removeTodo } from "../../store/features/todo/todoSlice";
 
 const Item = ({ id, todo, date, img }) => {
 	const dispatch = useDispatch();
